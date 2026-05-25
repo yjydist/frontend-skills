@@ -1,0 +1,133 @@
+{
+  "skill_name": "retro-pixel-web",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a personal portfolio landing page with a retro pixel aesthetic. Include: a hero section with name and tagline, a skills section with stat cards, a projects grid with cards, and a contact section with action buttons. The page should support both English and Chinese text in pixel fonts. Use plain HTML and CSS.",
+      "expected_output": "A complete HTML file with retro pixel styling: cream background, bold dark borders on cards, pixel font for headings in both English and Chinese, purple accent buttons, Lucide icons, dark mode support, and proper semantic HTML.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "html_file_exists",
+          "description": "Generated HTML file exists and is non-empty"
+        },
+        {
+          "name": "chinese_pixel_font_loaded",
+          "description": "HTML includes Fusion Pixel 12px Monospaced SC font loading"
+        },
+        {
+          "name": "english_pixel_font_loaded",
+          "description": "HTML includes Press Start 2P font loading"
+        },
+        {
+          "name": "chinese_text_present",
+          "description": "Page contains actual Chinese characters in headings or labels"
+        },
+        {
+          "name": "pixel_font_for_headings",
+          "description": "Headings use the pixel font family (--font-pixel or equivalent)"
+        },
+        {
+          "name": "dark_mode_support",
+          "description": "HTML includes dark mode toggle or [data-theme='dark'] CSS"
+        },
+        {
+          "name": "lucide_icons_used",
+          "description": "Page uses Lucide icons (CDN or inline)"
+        },
+        {
+          "name": "card_border_style",
+          "description": "Cards use 2px solid border with visible border color"
+        },
+        {
+          "name": "cream_background",
+          "description": "Page background uses cream/off-white color (#FFFDF5 or similar)"
+        },
+        {
+          "name": "purple_accent",
+          "description": "Primary accent color is purple/indigo (#6366F1 or similar)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Build a product page for a retro-themed online store. Include: a product header with title and price, feature cards with icons, a pricing table with comparison, tab navigation between 'Features' and 'Reviews', and action buttons. Output as a single HTML file with both English and Chinese content.",
+      "expected_output": "A complete HTML file with the retro pixel aesthetic applied to an e-commerce product page, including all specified components styled consistently with the design system and pixel fonts for both languages.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "html_file_exists",
+          "description": "Generated HTML file exists and is non-empty"
+        },
+        {
+          "name": "chinese_pixel_font_loaded",
+          "description": "HTML includes Fusion Pixel 12px Monospaced SC font loading"
+        },
+        {
+          "name": "chinese_text_present",
+          "description": "Page contains actual Chinese characters"
+        },
+        {
+          "name": "tab_component",
+          "description": "Page includes a tab navigation component"
+        },
+        {
+          "name": "table_component",
+          "description": "Page includes a pricing table or comparison table"
+        },
+        {
+          "name": "card_components",
+          "description": "Page includes feature cards with icons"
+        },
+        {
+          "name": "dark_mode_support",
+          "description": "HTML includes dark mode support"
+        },
+        {
+          "name": "lucide_icons_used",
+          "description": "Page uses Lucide icons"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a blog homepage with a retro pixel design. Include: a header with blog name and theme toggle, featured article cards with images (placeholder), a categories section with stat cards showing post counts, a recent posts table with titles/dates/tags, and pagination buttons. Use plain HTML/CSS.",
+      "expected_output": "A complete HTML file with retro pixel styling applied to a blog interface with pixel font headings in both English and Chinese, proper accessibility features, and dark mode support.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "html_file_exists",
+          "description": "Generated HTML file exists and is non-empty"
+        },
+        {
+          "name": "chinese_pixel_font_loaded",
+          "description": "HTML includes Fusion Pixel 12px Monospaced SC font loading"
+        },
+        {
+          "name": "chinese_text_present",
+          "description": "Page contains actual Chinese characters"
+        },
+        {
+          "name": "header_with_theme_toggle",
+          "description": "Page includes a header with theme toggle button"
+        },
+        {
+          "name": "stat_cards",
+          "description": "Page includes stat cards showing category post counts"
+        },
+        {
+          "name": "table_component",
+          "description": "Page includes a recent posts table"
+        },
+        {
+          "name": "dark_mode_support",
+          "description": "HTML includes dark mode support"
+        },
+        {
+          "name": "lucide_icons_used",
+          "description": "Page uses Lucide icons"
+        }
+      ]
+    }
+  ]
+}

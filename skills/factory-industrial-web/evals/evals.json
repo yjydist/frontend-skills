@@ -1,0 +1,78 @@
+{
+  "skill_name": "factory-industrial-web",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "build me a single self-contained html file for a settings page for a fictional dev-tool called 'Anvil'. it should have a left sidebar with these items (general, organization, members, api keys, billing, usage, support), the main area should have a 'YOUR ACCOUNT' card with an avatar tile (use the initials AV), a 'CONNECT YOUR REPO' card with github + gitlab and step1/step2 connect buttons for each, a preferences card with 4 toggleable settings, and at the very bottom a danger zone card for canceling subscription. include some chinese (中文) too — at least the user's name and the title — to test mixed-script handling.",
+      "expected_output": "A single HTML file in the industrial-blueprint style: hatched gray body background, white cards with 1px black borders no radius, uppercase letter-spaced section labels, monogram avatar tile, black solid CONNECT buttons, orange toggles, danger zone with red label and red-bordered cancel button. Mixed Chinese + English text rendered cleanly.",
+      "files": [],
+      "assertions": [
+        { "name": "html_file_exists", "description": "Generated HTML file exists and is non-empty" },
+        { "name": "hatched_background", "description": "Body uses repeating-linear-gradient at 135deg for the diagonal stripe background" },
+        { "name": "no_border_radius_on_cards", "description": "Cards use border-radius 0 (sharp corners) — no rounded card corners" },
+        { "name": "hairline_black_borders", "description": "Cards/buttons/inputs use 1px solid border with a near-black color (#111 / #0A0A0A or similar)" },
+        { "name": "orange_accent_color", "description": "Pumpkin orange accent (#F06D2D or close variant) is defined and used at least on the toggle on-state" },
+        { "name": "uppercase_section_labels", "description": "Section labels use text-transform: uppercase + letter-spacing >= 0.05em" },
+        { "name": "solid_black_primary_buttons", "description": "Primary buttons (e.g. CONNECT) have a near-black background (#0A0A0A / #000) with white uppercase text" },
+        { "name": "monogram_tile", "description": "An identity tile with large centered initials/glyph appears in the YOUR ACCOUNT card" },
+        { "name": "chinese_text_present", "description": "Page contains actual CJK characters" },
+        { "name": "danger_zone", "description": "A bottom card uses red-tinted label/text for a 'DANGER ZONE' or cancel-subscription section" },
+        { "name": "lucide_icons_used", "description": "Page uses Lucide icons via CDN or framework integration" },
+        { "name": "sans_serif_typography", "description": "Body font stack includes Inter and a CJK sans-serif (Noto Sans SC / PingFang SC); not a monospace stack" }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want a dashboard page for a fictional logistics company that tracks shipments. plain html, single file. show 4 KPI/stat cards across the top (total shipments, on-time rate, avg transit days, open exceptions), a recent shipments table with 6 rows (tracking number, origin, destination, carrier, status, eta), and a small operations log on the right with timestamped entries. should feel like an industrial control room or freight ops console, not a typical SaaS dashboard.",
+      "expected_output": "A dashboard with the same industrial-blueprint visual language: hatched gray background, white stat cards with sharp corners and 1px borders, an uppercase-headed table with hairline row separators, status chips (success/warning/danger variants), monospace-tabular numerals on numeric columns, single orange accent reserved for status or focused element.",
+      "files": [],
+      "assertions": [
+        { "name": "html_file_exists", "description": "Generated HTML file exists and is non-empty" },
+        { "name": "hatched_background", "description": "Body uses repeating-linear-gradient at 135deg for the diagonal stripe background" },
+        { "name": "stat_cards_grid", "description": "Page contains a grid of stat cards with uppercase labels and large numeric values" },
+        { "name": "tabular_numerals", "description": "Numeric content uses font-variant-numeric: tabular-nums (set on stats or table)" },
+        { "name": "shipments_table", "description": "Page includes a table with at least 6 rows of shipment data and uppercase header cells" },
+        { "name": "no_border_radius_on_cards", "description": "Cards/stat blocks use border-radius 0" },
+        { "name": "single_orange_accent", "description": "Orange accent (#F06D2D or close) appears at most a few times — for a status chip, a focused element, or a single highlight — not on every card or button" },
+        { "name": "status_chips", "description": "Status indicators are rendered as small chips with uppercase labels and either accent or danger color" },
+        { "name": "no_drop_shadows_on_cards", "description": "Cards do not use box-shadow for elevation; structure comes from the 1px border alone" },
+        { "name": "sans_serif_typography", "description": "Inter (or system sans) is used; no monospace stack as the body font" }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "make a marketing landing page for a fictional open-source product called 'Lathe' — it's a CLI for benchmarking machine learning models. one html file, no build step. it needs: a hero section with the product name as a giant monogram tile + a 1-2 sentence pitch + two CTA buttons (Get Started + Read Docs), a 'WHAT'S INSIDE' section with 3 feature cards, a small code snippet showing example usage, a comparison-style pricing table with Free / Team / Enterprise columns, and a footer CTA card. the audience is engineers, so it should feel rigorous and unmarketingy.",
+      "expected_output": "A landing page using the same primitives — hatched body background, monogram tile in the hero (used as a brand glyph), feature cards reusing the stat-card shape, a sharp-cornered pricing table, CTA card with a single primary action. No gradients, no drop shadows, no purple/blue/green decorative colors. Code snippet uses the mono font stack.",
+      "files": [],
+      "assertions": [
+        { "name": "html_file_exists", "description": "Generated HTML file exists and is non-empty" },
+        { "name": "hatched_background", "description": "Body uses repeating-linear-gradient at 135deg for the diagonal stripe background" },
+        { "name": "hero_monogram", "description": "Hero contains a large monogram tile as the brand glyph (square block with large centered character/initial)" },
+        { "name": "feature_cards", "description": "Page contains a grid of 3 feature cards reusing the same border/no-radius style as the rest of the system" },
+        { "name": "code_snippet_mono", "description": "Code snippet uses a monospace font (JetBrains Mono / SF Mono / Consolas / ui-monospace)" },
+        { "name": "pricing_table", "description": "Page includes a comparison-style pricing table with Free/Team/Enterprise columns and uppercase headers" },
+        { "name": "no_border_radius_on_cards", "description": "Cards/buttons/inputs use border-radius 0" },
+        { "name": "no_gradients", "description": "No CSS linear-gradient or radial-gradient is used as a background fill on cards or buttons (the body's repeating-linear-gradient stripe pattern is allowed)" },
+        { "name": "two_ctas_in_hero", "description": "Hero section has both a primary (solid black) and a secondary (outline) CTA button" }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "design a single-file html homepage for a small specialty coffee shop called 'Kiln Coffee'. it should feel intentional and a bit unconventional — not the typical warm/cream/handwritten cafe vibe. include: a header with the shop name and a small nav (menu, locations, journal, shop), a hero section with the shop's tagline and a 'view menu' CTA, a 3-card section featuring single-origin beans (each with origin/process/tasting notes), a 'visit us' card with two location entries showing address + hours, and a newsletter signup at the bottom. surprise me with the aesthetic — i'm tired of every coffee site looking the same.",
+      "expected_output": "A coffee-shop homepage that applies the industrial-blueprint design language to a non-obvious domain. The result should feel deliberately designed and confidently un-cute — hatched gray background, white sharp-cornered cards, uppercase typography for labels, single orange accent, monogram tile somewhere meaningful (e.g. the K of Kiln). The skill's job here is to NOT default to traditional cafe aesthetics and instead translate the brief through this system.",
+      "files": [],
+      "assertions": [
+        { "name": "html_file_exists", "description": "Generated HTML file exists and is non-empty" },
+        { "name": "hatched_background", "description": "Body uses repeating-linear-gradient at 135deg for the diagonal stripe background" },
+        { "name": "no_warm_cream_background", "description": "Body background is a cool gray (#EAEAEA-ish), not a warm cream/beige/off-white" },
+        { "name": "no_border_radius_on_cards", "description": "Cards/buttons use border-radius 0" },
+        { "name": "no_handwritten_or_serif_fonts", "description": "Typography is sans-serif throughout — no script/handwritten fonts and no decorative serifs" },
+        { "name": "uppercase_section_labels", "description": "Section labels (e.g. SINGLE ORIGIN, VISIT US, NEWSLETTER) are uppercase + letter-spaced" },
+        { "name": "three_bean_cards", "description": "There is a grid/row of 3 cards for the single-origin beans, each with origin and tasting note text" },
+        { "name": "two_location_entries", "description": "The 'visit us' section includes 2 location entries with address and hours" },
+        { "name": "newsletter_signup", "description": "Page has a newsletter signup with an input and a primary CTA button" },
+        { "name": "single_orange_accent", "description": "Orange accent (#F06D2D or close) appears sparingly — for a focus/highlight, not on every button" }
+      ]
+    }
+  ]
+}
