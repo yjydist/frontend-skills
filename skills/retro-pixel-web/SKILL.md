@@ -1,6 +1,13 @@
 ---
 name: "retro-pixel-web"
-description: "Creates web interfaces with a retro-modern aesthetic: cream backgrounds, bold dark borders, purple/indigo accents, pure monospace typography throughout (Courier Prime for English, Sarasa Mono SC for Chinese), playful card-based layouts, and Lucide icons. Invoke whenever the user asks to build any type of web page, website, landing page, blog, portfolio, e-commerce site, admin panel, dashboard, data UI, analytics page, system status page, configuration interface, or any web interface matching this specific visual style. Always use this skill when the user wants a retro, nostalgic, or typewriter aesthetic for their web project, regardless of the page type or content."
+description: |- 
+  Creates web interfaces with a retro-modern aesthetic: 
+
+    cream backgrounds, bold dark borders, purple/indigo accents, pure monospace typography throughout (Courier Prime for English, Sarasa Mono SC for Chinese), playful card-based layouts, and Lucide icons. 
+
+    Invoke whenever the user asks to build any type of web page, website, landing page, blog, portfolio, e-commerce site, admin panel, dashboard, data UI, analytics page, system status page, configuration interface, or any web interface matching this specific visual style. 
+
+    Always use this skill when the user wants a retro, nostalgic, or typewriter aesthetic for their web project, regardless of the page type or content.
 ---
 
 # Retro Pixel Web Skill

@@ -1,7 +1,13 @@
 ---
 name: "factory-industrial-web"
-description: >-
-  Creates web interfaces with an industrial-blueprint aesthetic: light gray base with diagonal hairline stripe overlay, sharp 1px black borders with no rounded corners, oversized monogram tiles for identity blocks, all-caps section labels, solid black pill-free buttons, and a single pumpkin-orange accent (#F06D2D) reserved for toggles, primary highlights, and warning links. Typography is Inter for English and Noto Sans SC / PingFang SC for Chinese, sans-serif throughout, with tabular numerals on data. Invoke whenever the user wants a settings page, account/preferences UI, admin panel, dashboard, landing page, marketing site, blog, portfolio, e-commerce page, configuration interface, status page, developer console, or any web surface — even if they don't name the style explicitly — when their reference shows engineering/blueprint vibes, brutalist sharp-edged cards on hatched paper, factory.ai-like layouts, or asks for an industrial, technical, schematic, brutalist, paper-engineering, or typewriter-but-modern look. Use this skill any time the user describes a desired aesthetic with words like industrial, brutalist, blueprint, schematic, engineering, paper-craft, draftsman, factory, technical-document, hatched, striped, pin-stripe, anything-but-rounded, or asks to imitate UI screenshots that match the visual signature above.
+description: |-
+  Creates web interfaces with an industrial-blueprint aesthetic: 
+
+    light gray base with diagonal hairline stripe overlay, sharp 1px black borders with no rounded corners, oversized monogram tiles for identity blocks, all-caps section labels, solid black pill-free buttons, and a single pumpkin-orange accent (#F06D2D) reserved for toggles, primary highlights, and warning links. Typography is Inter for English and Noto Sans SC / PingFang SC for Chinese, sans-serif throughout, with tabular numerals on data. 
+
+    Invoke whenever the user wants a settings page, account/preferences UI, admin panel, dashboard, landing page, marketing site, blog, portfolio, e-commerce page, configuration interface, status page, developer console, or any web surface — even if they don't name the style explicitly — when their reference shows engineering/blueprint vibes, brutalist sharp-edged cards on hatched paper, factory.ai-like layouts, or asks for an industrial, technical, schematic, brutalist, paper-engineering, or typewriter-but-modern look. 
+
+    Use this skill any time the user describes a desired aesthetic with words like industrial, brutalist, blueprint, schematic, engineering, paper-craft, draftsman, factory, technical-document, hatched, striped, pin-stripe, anything-but-rounded, or asks to imitate UI screenshots that match the visual signature above.
 ---
 
 # Factory Industrial Web Skill
