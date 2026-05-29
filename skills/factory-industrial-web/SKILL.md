@@ -1,6 +1,12 @@
 ---
 name: "factory-industrial-web"
-description: "Industrial-blueprint web UI: gray hatched paper, 1px black borders, zero radius, all-caps labels, orange accent (#F06D2D). Auto-trigger for settings, dashboards, admin panels, landing pages, blogs, portfolios, e-commerce, or when users request industrial, brutalist, blueprint, schematic, engineering, factory, technical, hatched, striped, anything-but-rounded aesthetics."
+description: >-
+  Industrial-blueprint web UI: gray hatched paper, 1px black borders, zero
+  radius, all-caps labels, orange accent (#F06D2D).
+  Use this skill when the user explicitly requests an industrial, brutalist,
+  blueprint, schematic, engineering, factory, technical, hatched, or striped
+  aesthetic for a web page, dashboard, admin panel, settings page, landing
+  page, blog, portfolio, or e-commerce site.
 ---
 
 # Factory Industrial Web Skill

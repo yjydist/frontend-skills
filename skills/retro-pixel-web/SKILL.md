@@ -1,6 +1,11 @@
 ---
 name: "retro-pixel-web"
-description: "Retro typewriter web UI: cream backgrounds, bold dark borders, purple/indigo accent (#6366F1), pure monospace typography, card layouts. Auto-trigger for any web page, landing page, blog, portfolio, e-commerce, admin panel, dashboard, or when users request retro, nostalgic, or typewriter aesthetics."
+description: >-
+  Retro typewriter web UI: cream backgrounds, bold dark borders,
+  purple/indigo accent (#6366F1), pure monospace typography, card layouts.
+  Use this skill when the user explicitly requests a retro, nostalgic,
+  or typewriter aesthetic for a web page, landing page, blog, portfolio,
+  dashboard, admin panel, or e-commerce site.
 ---
 
 # Retro Pixel Web Skill
