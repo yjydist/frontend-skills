@@ -1,0 +1,19 @@
+{
+  "name": "frontend-skills",
+  "version": "1.0.0",
+  "description": "Frontend UI design skills for creating distinctive, production-grade web interfaces",
+  "author": {
+    "name": "yjydist",
+    "email": "yjydist@qq.com"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Frontend Skills",
+    "shortDescription": "Create distinctive, production-grade frontend interfaces with high design quality",
+    "longDescription": "Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautifying any web UI). Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+    "developerName": "yjydist",
+    "category": "Productivity",
+    "capabilities": ["frontend-design"],
+    "defaultPrompt": "Help me design and build a frontend interface."
+  }
+}
