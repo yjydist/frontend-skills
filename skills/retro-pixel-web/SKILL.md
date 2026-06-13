@@ -1,6 +1,6 @@
 ---
 name: "retro-pixel-web"
-description: >-
+description: |-
   Retro typewriter web UI: cream backgrounds, bold dark borders,
   purple/indigo accent (#6366F1), pure monospace typography, card layouts.
   Use this skill when the user explicitly requests a retro, nostalgic,
